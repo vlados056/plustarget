@@ -2,7 +2,7 @@
 <html lang="ru" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>PLUS.TARGETS | Профессиональный таргетинг</title>
     <link rel="icon" type="image/svg+xml" href="./public/logo-plus-targets.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -79,8 +79,8 @@
     <div class="orb w-96 h-96 bg-purple-600/20 top-0 left-0"></div>
     <div class="orb w-96 h-96 bg-blue-500/20 bottom-0 left-1/2"></div>
 
-    <nav class="fixed w-full z-50 glass border-b border-white/10 p-4">
-        <div class="container mx-auto flex justify-between items-center max-w-6xl">
+    <nav class="fixed top-0 left-0 right-0 w-full z-50 glass border-b border-white/10" style="padding-top: env(safe-area-inset-top, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px);">
+        <div style="padding: 14px 20px;" class="flex justify-between items-center w-full">
             <span class="flex items-center gap-3 text-xl font-bold">
                 <img src="./public/logo-plus-targets.svg" alt="PLUS.TARGETS" class="w-8 h-8 rounded-lg">
                 <span>PLUS.TARGETS</span>
@@ -96,7 +96,7 @@
     </nav>
 
     <!-- MOBILE hero (shown only on small screens) -->
-    <section class="block md:hidden relative z-20 pt-20">
+    <section class="block md:hidden relative z-20" style="padding-top: max(calc(env(safe-area-inset-top) + 60px), 80px);">
         <div class="hero-mobile-wrapper">
             <div class="hero-mobile-photo">
                 <img src="./public/hero-photo.png" alt="Влад Алексеев" />
